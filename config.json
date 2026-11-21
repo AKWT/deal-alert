@@ -28,7 +28,7 @@
     "jeu de societe", "jeux de societe", "puzzle", "chaise gaming",
     "ps plus", "portal", "vr2"
   ],
-  "max_price": 520,
+  "max_price": 500,
   "min_price": 250,
   "telegram_enabled": true,
   "site_days_kept": 45
