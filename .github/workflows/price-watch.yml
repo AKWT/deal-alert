@@ -1,0 +1,50 @@
+name: Surveillance prix PS5 (marchands)
+
+on:
+  schedule:
+    - cron: "15,45 * * * *"   # toutes les 30 min, decale du workflow Dealabs
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "normal = alertes, test = affichage seul, ping = message Telegram de test"
+        type: choice
+        options: [test, normal, ping]
+        default: test
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deal-alert          # meme groupe que le workflow Dealabs : jamais deux sauvegardes en meme temps
+  cancel-in-progress: false
+
+jobs:
+  price-watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests beautifulsoup4 playwright
+      - run: python -m playwright install --with-deps chromium
+      - name: Verification des prix
+        run: |
+          MODE="${{ github.event.inputs.mode || 'normal' }}"
+          if [ "$MODE" = "test" ]; then python price_watch.py --test
+          elif [ "$MODE" = "ping" ]; then python price_watch.py --ping
+          else python price_watch.py; fi
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      - name: Sauvegarde de l'etat
+        run: |
+          git config user.name "deal-bot"
+          git config user.email "deal-bot@users.noreply.github.com"
+          [ -f price_state.json ] || exit 0
+          git add price_state.json
+          git diff --staged --quiet && exit 0
+          git commit -m "maj prix"
+          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
+          exit 1
