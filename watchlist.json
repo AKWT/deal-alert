@@ -1,0 +1,144 @@
+{
+  "settings": {
+    "default_max_price": 500,
+    "realert": "baisse",
+    "block_alert_after": 3,
+    "sanity_min": 150,
+    "sanity_max": 1500,
+    "playwright_fallback": true,
+    "delay_seconds": 3
+  },
+  "sites": [
+    {
+      "name": "Sony - Pack PS5 Digital + Fortnite Flowering Chaos (neuf)",
+      "url": "https://www.playstation.com/fr-fr/ps5/digital-edition-825-gb/product/fortnite-flowering-chaos-bundle/",
+      "max_price": 400,
+      "enabled": true,
+      "out_of_stock_text": ["Non disponible à l'achat"],
+      "note": "349,99 EUR le 21/11 mais non disponible a l'achat : alerte quand il revient"
+    },
+    {
+      "name": "Sony - PS5 Digital 825 Go (neuf)",
+      "url": "https://www.playstation.com/fr-fr/ps5/digital-edition-825-gb/",
+      "max_price": 500,
+      "enabled": true,
+      "out_of_stock_text": ["Actuellement en rupture de stock"],
+      "note": "599,99 EUR, en rupture le 21/11"
+    },
+    {
+      "name": "Sony - PS5 Slim Digital reconditionnee certifiee",
+      "url": "https://www.playstation.com/fr-fr/ps5/certified-refurbished-ps5-slim-digital-edition/",
+      "max_price": 500,
+      "enabled": true,
+      "out_of_stock_text": ["Non disponible à l'achat"],
+      "note": "499,99 EUR, non disponible le 21/11"
+    },
+    {
+      "name": "Sony - PS5 Slim (lecteur) reconditionnee certifiee",
+      "url": "https://direct.playstation.com/fr-fr/buy-consoles/certified-refurbished-playstation5-console-model-group-slim",
+      "max_price": 550,
+      "enabled": true,
+      "out_of_stock_text": ["Non disponible à l'achat"],
+      "note": ""
+    },
+    {
+      "name": "Idealo - PS5 Slim Digital (tous marchands)",
+      "url": "https://www.idealo.fr/prix/203554857/sony-playstation-5-slim-ps5-slim-edition-numerique.html",
+      "max_price": 500,
+      "enabled": true,
+      "note": "Comparateur : couvre Amazon, Carrefour, Cdiscount... 599 EUR le 21/11"
+    },
+    {
+      "name": "Boulanger - PS5 Digitale",
+      "url": "https://www.boulanger.com/ref/1228868",
+      "max_price": 500,
+      "enabled": true,
+      "note": "599,99 EUR"
+    },
+    {
+      "name": "Carrefour - PS5 Slim Digital",
+      "url": "https://www.carrefour.fr/p/console-playstation-5-slim-edition-digitale-sony-0711719577294",
+      "max_price": 500,
+      "enabled": true,
+      "note": ""
+    },
+    {
+      "name": "Auchan - PS5 Digitale modele Slim",
+      "url": "https://www.auchan.fr/sony-console-playstation-5-digitale-modele-slim/pr-C1778923",
+      "max_price": 500,
+      "enabled": true,
+      "note": ""
+    },
+    {
+      "name": "Fnac - PS5 Edition Digital",
+      "url": "https://www.fnac.com/Console-Sony-PS5-Edition-Digital/a14840008/w-4",
+      "max_price": 500,
+      "enabled": true,
+      "note": "Ancien chassis, souvent en rupture. Fnac bloque souvent les robots"
+    },
+    {
+      "name": "Amazon - PS5 Digital",
+      "url": "",
+      "max_price": 500,
+      "enabled": false,
+      "css": "#corePrice_feature_div .a-offscreen",
+      "note": "Colle l'URL de la fiche produit. Amazon bloque souvent GitHub : Idealo couvre Amazon"
+    },
+    {
+      "name": "Darty - PS5 Digital",
+      "url": "",
+      "max_price": 500,
+      "enabled": false,
+      "note": "Colle l'URL de la fiche produit (meme protection que Fnac)"
+    },
+    {
+      "name": "Cdiscount - PS5 Digital",
+      "url": "",
+      "max_price": 500,
+      "enabled": false,
+      "note": "Colle l'URL de la fiche produit (pas la page de recherche)"
+    },
+    {
+      "name": "E.Leclerc - PS5 Digital",
+      "url": "",
+      "max_price": 500,
+      "enabled": false,
+      "note": "Colle l'URL de la fiche produit"
+    },
+    {
+      "name": "Micromania - PS5 Digital (neuf ou occasion)",
+      "url": "",
+      "max_price": 500,
+      "enabled": false,
+      "note": "Colle l'URL de la fiche produit"
+    },
+    {
+      "name": "Rakuten - PS5 Digital",
+      "url": "",
+      "max_price": 450,
+      "enabled": false,
+      "note": "Colle l'URL de la fiche produit"
+    },
+    {
+      "name": "Back Market - PS5 Digital reconditionnee",
+      "url": "",
+      "max_price": 450,
+      "enabled": false,
+      "playwright": true,
+      "note": "PS5 en rupture le 21/11. Prefere le favori + alerte dans l'appli Back Market"
+    },
+    {
+      "name": "LeDenicheur - PS5 Slim Digital",
+      "url": "",
+      "max_price": 500,
+      "enabled": false,
+      "note": "Colle l'URL de la fiche produit (ledenicheur.fr/product.php?p=...)"
+    },
+    {
+      "name": "Leboncoin",
+      "url": "",
+      "enabled": false,
+      "note": "Non surveille par script (protection anti-robot + conditions du site) : utilise l'alerte de recherche Leboncoin"
+    }
+  ]
+}
