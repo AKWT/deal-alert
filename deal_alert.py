@@ -137,6 +137,7 @@ def main() -> None:
     first_run = not SEEN_FILE.exists() or not DEALS_FILE.exists()
     new_ids, alerts = [], []
     max_price = CONFIG.get("max_price")
+    min_price = CONFIG.get("min_price") or 0
 
     feeds = [(u, True) for u in CONFIG["theme_feeds"]] + [(u, False) for u in CONFIG["general_feeds"]]
     for url, is_theme in feeds:
@@ -159,7 +160,7 @@ def main() -> None:
                 continue
             if not is_theme and not any_term(text, CONFIG["keywords"]):
                 continue
-            if max_price and deal["price"] and deal["price"] > max_price:
+            if deal["price"] and ((max_price and deal["price"] > max_price) or deal["price"] < min_price):
                 continue
             if uid not in deals:
                 deal["first_seen"] = NOW.isoformat()
