@@ -21,16 +21,15 @@
     "jeu video", "jeux video", "console", "manette", "gaming", "retrogaming"
   ],
   "alert_keywords": [
-    "ps5", "ps4", "playstation", "psn", "dualsense", "ps vr2", "ps portal",
-    "xbox", "game pass", "series x", "series s",
-    "switch", "switch 2", "nintendo", "eshop", "joy-con", "amiibo",
-    "steam deck", "rog ally", "legion go", "meta quest",
-    "jeu video", "jeux video", "console", "manette", "gaming", "retrogaming"
+    "ps5 slim", "ps5 digital", "ps5 pro", "console ps5",
+    "playstation 5 slim", "playstation 5 digital", "console playstation 5", "pack ps5"
   ],
   "exclude": [
-    "jeu de societe", "jeux de societe", "puzzle", "chaise gaming"
+    "jeu de societe", "jeux de societe", "puzzle", "chaise gaming",
+    "ps plus", "portal", "vr2"
   ],
-  "max_price": null,
+  "max_price": 520,
+  "min_price": 250,
   "telegram_enabled": true,
   "site_days_kept": 45
 }
