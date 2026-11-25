@@ -4,7 +4,7 @@
   "last_alert_price": null,
   "name": "Sony - Pack PS5 Digital + Fortnite Flowering Chaos (neuf)",
   "last_status": "ok",
-  "last_checked": "2026-11-24T18:21:29+00:00",
+  "last_checked": "2026-11-25T02:48:11+00:00",
   "last_price": 349.99
  },
  "https://www.playstation.com/fr-fr/ps5/digital-edition-825-gb/": {
@@ -12,7 +12,7 @@
   "last_alert_price": null,
   "name": "Sony - PS5 Digital 825 Go (neuf)",
   "last_status": "ok",
-  "last_checked": "2026-11-24T18:21:29+00:00",
+  "last_checked": "2026-11-25T02:48:11+00:00",
   "last_price": 599.99
  },
  "https://www.playstation.com/fr-fr/ps5/certified-refurbished-ps5-slim-digital-edition/": {
@@ -20,7 +20,7 @@
   "last_alert_price": null,
   "name": "Sony - PS5 Slim Digital reconditionnee certifiee",
   "last_status": "ok",
-  "last_checked": "2026-11-24T18:21:29+00:00",
+  "last_checked": "2026-11-25T02:48:11+00:00",
   "last_price": 499.99
  },
  "https://direct.playstation.com/fr-fr/buy-consoles/certified-refurbished-playstation5-console-model-group-slim": {
@@ -28,42 +28,42 @@
   "last_alert_price": null,
   "name": "Sony - PS5 Slim (lecteur) reconditionnee certifiee",
   "last_status": "ok",
-  "last_checked": "2026-11-24T18:21:29+00:00",
+  "last_checked": "2026-11-25T02:48:11+00:00",
   "last_price": 549.99
  },
  "https://www.idealo.fr/prix/203554857/sony-playstation-5-slim-ps5-slim-edition-numerique.html": {
-  "fails": 11,
+  "fails": 12,
   "last_alert_price": null,
   "name": "Idealo - PS5 Slim Digital (tous marchands)",
   "last_status": "bloqué",
-  "last_checked": "2026-11-24T18:21:29+00:00"
+  "last_checked": "2026-11-25T02:48:11+00:00"
  },
  "https://www.boulanger.com/ref/1228868": {
-  "fails": 11,
+  "fails": 12,
   "last_alert_price": null,
   "name": "Boulanger - PS5 Digitale",
   "last_status": "introuvable",
-  "last_checked": "2026-11-24T18:21:29+00:00"
+  "last_checked": "2026-11-25T02:48:11+00:00"
  },
  "https://www.carrefour.fr/p/console-playstation-5-slim-edition-digitale-sony-0711719577294": {
-  "fails": 11,
+  "fails": 12,
   "last_alert_price": null,
   "name": "Carrefour - PS5 Slim Digital",
   "last_status": "bloqué",
-  "last_checked": "2026-11-24T18:21:29+00:00"
+  "last_checked": "2026-11-25T02:48:11+00:00"
  },
  "https://www.auchan.fr/sony-console-playstation-5-digitale-modele-slim/pr-C1778923": {
-  "fails": 11,
+  "fails": 12,
   "last_alert_price": null,
   "name": "Auchan - PS5 Digitale modele Slim",
   "last_status": "introuvable",
-  "last_checked": "2026-11-24T18:21:29+00:00"
+  "last_checked": "2026-11-25T02:48:11+00:00"
  },
  "https://www.fnac.com/Console-Sony-PS5-Edition-Digital/a14840008/w-4": {
-  "fails": 11,
+  "fails": 12,
   "last_alert_price": null,
   "name": "Fnac - PS5 Edition Digital",
   "last_status": "bloqué",
-  "last_checked": "2026-11-24T18:21:29+00:00"
+  "last_checked": "2026-11-25T02:48:11+00:00"
  }
 }
